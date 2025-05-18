@@ -16,9 +16,5 @@ This is the public GitHub repository:
 # 🧠 Prompt Used
 Product list with checkboxes and basic filter from the Business category from [this list](https://www.codecircuit.ai/idealist))
 
-# How to Run
-1. Open `index.html` in a browser.
-2. Use the buttons to filter products.
-
 # Author
 Manvi Garg
