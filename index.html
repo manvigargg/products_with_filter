@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(242, 220, 223);
+  padding: 20px;
+}
+
+.container {
+  color: rgb(240, 203, 229);
+  max-width: 1000px;
+  margin: auto;
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #240e0e;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.product {
+  color:#240e0e;
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.product:hover{
+    background-color: pink;
+    box-shadow: 2px 2px 3px red;
+}
+</style>
+
+
+</head>
+<body>
+  <div class="container">
+    <h1><marquee direction="right">PRODUCTS</marquee></h1>
+
+    <div class="filters">
+      <h3>Filters:</h3>
+       <input type="checkbox" value="iPhone" class="filter-checkbox">iPhone<br>
+       <input type="checkbox" value="clothing" class="filter-checkbox">Clothing<br>
+       <input type="checkbox" value="skincare" class="filter-checkbox">Skincare<br>
+    </div>
+
+    <div class="product-list">
+      <div class="product" data-category="iPhone">iPhone 13<br><img src="13.jpg" width="60" height="80"></div>
+      <div class="product" data-category="iPhone">iPhone 14<br><img src="14.jpg" width="60" height="80"></div>
+      <div class="product" data-category="iPhone">iPhone 15<br><img src="15.jpg" width="60" height="80"></div>
+      <div class="product" data-category="iPhone">iPhone 16<br><img src="16.jpg" width="60" height="80"></div>
+
+      <div class="product" data-category="clothing">Tuxedo<br><img src="tux.jpg" width="80" height="80"></div>
+      <div class="product" data-category="clothing">Wide-leg Jeans<br><img src="jean.jpg" width="60" height="80"></div>
+      <div class="product" data-category="clothing">Crop Tops<br><img src="crop.jpg" width="60" height="80"></div>
+      <div class="product" data-category="clothing">Sweatshirts<br><img src="sweat.jpg" width="80" height="80"></div>
+
+      <div class="product" data-category="skincare">Cleanser<br><img src="cleanser.jpg" width="85" height="80"></div>
+      <div class="product" data-category="skincare">Toner<br><img src="toner.jpg" width="60" height="80"></div>
+      <div class="product" data-category="skincare">Moisturizer<br><img src="moist.jpg" width="37" height="80"></div>
+      <div class="product" data-category="skincare">Sunscreen<br><img src="sun.jpg" width="80" height="80"></div>
+      <div class="product" data-category="skincare">Sheet Masks<br><img src="sheet.jpg" width="60" height="80"></div>
+      <div class="product" data-category="skincare">Face Pack<br><img src="pack.jpg" width="65" height="70"></div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
